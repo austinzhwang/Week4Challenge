@@ -126,6 +126,16 @@ footer .copyright {
     text-align: center;
 }
 
+@media only screen and (min-width: 2000px) {
+    .title {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
 @media only screen and (min-width: 992px) {
     #mainNav {
         border-bottom: 1px solid transparent;
@@ -144,14 +154,6 @@ footer .copyright {
 
     header.masthead {
       height: 65vh;
-    }
-
-    .title {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
 
     .jumbotron {
