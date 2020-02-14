@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/a6ae2d75db.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -54,6 +55,80 @@
     </div>
 </header>
 
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <img class="img-fluid" src="/img/person.png" width="200" height="auto" alt="profile pic">
+        <br>
+        <h2>Hi, I'm Austin!</h2>
+        <hr>
+        <p class="lead left">I am currently taking a Java Web Developer Bootcamp at the Montgomery College Business Training
+            Center in Gaithersburg, Maryland. I love blogging about Core Java, Object Oriented Programming Concepts, and
+            Git/Github. After the Bootcamp, I'm looking to get my career started in full-stack web development/software
+            engineering.
+        </p>
+        <p class="lead left">Contact me through the form below or through one of my social media links.</p>
+        <a href="https://www.linkedin.com/in/austin-zh-wang/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="https://www.github.com/austinzhwang/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <div class="row left">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+                <form id="contact-form" method="post" action="" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">First Name <span class="red-star">*</span></label>
+                                    <input id="form_name" type="text" name="name" class="form-control"
+                                           placeholder="Enter your first name *" required="required" data-error="First name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Last Name <span class="red-star">*</span></label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control"
+                                           placeholder="Enter your last name" required="required" data-error="Last name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email <span class="red-star">*</span></label>
+                                    <input id="form_email" type="email" name="email" class="form-control"
+                                           placeholder="Enter your email" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message <span class="red-star">*</span></label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Enter your message"
+                                              rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="SEND">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><small class="text-muted">
+                                    <strong><span class="red-star">*</span></strong> These fields are required.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -63,6 +138,7 @@
         </div>
     </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

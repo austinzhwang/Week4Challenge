@@ -134,6 +134,10 @@ footer .copyright {
     text-align: left;
 }
 
+.red-star {
+    color: red;
+}
+
 @media only screen and (min-width: 992px) {
     #mainNav {
         border-bottom: 1px solid transparent;
