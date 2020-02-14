@@ -138,6 +138,14 @@ footer .copyright {
     color: red;
 }
 
+form {
+    font-family: 'Lora', serif;
+}
+
+.jumbotron {
+    background-color: #ececec;
+}
+
 @media only screen and (min-width: 992px) {
     #mainNav {
         border-bottom: 1px solid transparent;
@@ -167,7 +175,7 @@ footer .copyright {
 
     .jumbotron {
         width: 80%;
-        margin: 0 auto
+        margin: 0 auto;
     }
 
     .card-block {
