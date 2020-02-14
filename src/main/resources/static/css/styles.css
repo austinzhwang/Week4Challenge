@@ -126,14 +126,12 @@ footer .copyright {
     text-align: center;
 }
 
-@media only screen and (min-width: 2000px) {
-    .title {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
+.card-text {
+    font-style: italic;
+}
+
+.left {
+    text-align: left;
 }
 
 @media only screen and (min-width: 992px) {
@@ -152,12 +150,28 @@ footer .copyright {
         color: #fff;
     }
 
+    .title {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     header.masthead {
-      height: 65vh;
+        height: 70vh;
     }
 
     .jumbotron {
         width: 80%;
+        margin: 0 auto
+    }
+
+    .card-block {
+        padding: 10px;
+    }
+
+    .card-columns {
+        width: 60%;
         margin: 0 auto
     }
 }

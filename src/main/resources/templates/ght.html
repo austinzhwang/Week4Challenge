@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Blog | Contact</title>
+    <title>Blog | Github Teams</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
@@ -40,29 +40,56 @@
     </div>
 </nav>
 
-<header class="masthead"  style="background-image: url('img/contact-bg.jpg')">
+<header class="masthead"  style="background-image: url('/img/blog-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="title col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>Contact Me</h1>
-                    <span class="subheading">Want to learn more? Message me</span>
+                    <h1>GitHub Teams</h1>
+                    <span class="subheading">Workflow</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <p class="copyright text-muted">Copyright &copy 2020 Austin Wang.</p>
-            </div>
-        </div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h3 class="display-5">
+            Workflow for Teams
+        </h3>
+        <p class="lead left">
+            <ul class="left">
+                <li>Anything in the master branch is deployable</li>
+                <li>To work on something new, issue a pull request then create a descriptively named branch off of master (ie: new-oauth2-scopes)</li>
+                <li>Commit to that branch locally and regularly push your work to the same named branch on the server</li>
+                <li>When you need feedback or help, or you think the branch is ready for merging, then pull</li>
+                <li>After you have reviewed and tested the feature, you can merge it into master</li>
+                <li>Once it is merged and pushed to ‘master’, you can and should deploy immediately</li>
+            </ul>
+        </p>
+        <p class="lead left">
+            Setting the URL for a team:<br>
+            git remote add origin "https://'yourName'@github.com/'RepositoryOwnerName'/repository.git"
+        </p>
+        <p class="lead left">
+            <ol class="left">
+                <li>When working on a team, one person should create the repository online and add the other team members as collaborators</li>
+                <li>That same person should also create the project directory</li>
+                <li>Next add a readme file:</li>
+                <li>mkdir ProjectDir</li>
+                <li>echo "#This is the ProjectName >>readme.md</li>
+                <li>echo "The team members are John, George, Paul and Ringo" >>readme.md</li>
+                <li>git commit -am "initial commit"</li>
+                <li>git push -u origin master</li>
+            </ol>
+        </p>
+
+        <p class="card-text"><small class="text-muted">Posted by <a href="/">Austin Wang</a>
+            on January 30, 2020</small></p>
     </div>
-</footer>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

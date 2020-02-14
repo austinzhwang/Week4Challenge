@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blog | Github Walkthrough</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="/">AW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead"  style="background-image: url('/img/blog-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="title col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>Github</h1>
+                    <span class="subheading">Walk-through Git</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h3 class="display-5">
+            Git Basics
+        </h3>
+        <p class="lead left">
+            For this walk-through, you'll want to open the Git shell. You can type the commands on the left and view the explanation on the right.
+        </p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">Command</th>
+                <th scope="col">Explanation</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>git help</td>
+                <td>The only command you can't forget is help. This will help you find the other commands.</td>
+            </tr>
+
+            <tr>
+                <td>git config -l</td>
+                <td>Use the lower-case L to list or view the settings in your configuration. The important parts are the remote, user.name and user.email</td>
+            </tr>
+
+            <tr>
+                <td>echo # Products >> README.md</td>
+                <td>The first commit can be a README file with as little as one line summary of the project, or enough information about the project's first milestone. The broad topics can also include:
+                    <br>- Introduction
+                    <br>- Project description
+                    <br>- Project structure
+                    <br>- Coding conventions</td>
+            </tr>
+
+            <tr>
+                <td>git init</td>
+                <td>
+                    The git init command creates a new Git repository. It can be used to convert an existing,
+                    un-versioned project to a Git repository or initialize a new empty repository. This is the first
+                    command you’ll run in a new project. git init creates a .git subdirectory in your project directory
+                    which all of the information git needs for your repository. The rest of an existing project is unchanged.</td>
+            </tr>
+
+            <tr>
+                <td>git add README.md</td>
+                <td>Adds the README file to the index</td>
+            </tr>
+
+            <tr>
+                <td>git commit -m "first commit"</td>
+                <td>
+                    The first commit is usually called initial commit or First commit or something similar depending on
+                    your preferences. I prefer to get this out of the way and commit before adding many files. From then on I only work from a branch</td>
+            </tr>
+
+            <tr>
+                <td>git remote add origin https://github.com/'your github username'/' your repository name'.git</td>
+                <td>git remote is used to add a new remote section called origin to our configuration. You can view the
+                    config file on windows using the type command. On unix this command is called cat.</td>
+            </tr>
+
+            <tr>
+                <td>git push -u origin master</td>
+                <td>Any change that we had committed was local to our repository. Those changes don't exist on GitHub yet.
+                    You push your changes to GitHub with the push command. Here we're pushing to origin from master.</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+        <p class="card-text"><small class="text-muted">Posted by <a href="/">Austin Wang</a>
+            on January 30, 2020</small></p>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p class="copyright text-muted">Copyright &copy 2020 Austin Wang.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
